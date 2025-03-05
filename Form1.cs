@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Text.Json;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace odevkontrolu
 {
@@ -23,9 +24,10 @@ namespace odevkontrolu
             Ogrenciler.DisplayMember = "FullName";
             cbSınıf.Items.AddRange(sınıflar);
         }
+        private const string CorrectPassword = "12345";
         void YeniEkle()
         {
-           
+
             cbSınıf.Items.AddRange(sınıflar);
             Ogr yeniPers = new();
             yeniPers.Ad = txtAd.Text;
@@ -150,6 +152,10 @@ namespace odevkontrolu
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
         }
     }
 }

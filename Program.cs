@@ -1,4 +1,4 @@
-namespace odevkontrolu
+﻿namespace odevkontrolu
 {
     internal static class Program
     {
@@ -11,7 +11,13 @@ namespace odevkontrolu
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            sifre form = new sifre();
+            var cevap = form.ShowDialog();//bloklanýyor ve cevap bekleniyor
+
+            if (cevap == DialogResult.OK)
+            {
+                Application.Run(new Form1());
+            }
         }
     }
 }
