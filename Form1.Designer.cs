@@ -194,7 +194,7 @@
             // 
             // txtAd
             // 
-            txtAd.Location = new Point(239, 93);
+            txtAd.Location = new Point(239, 92);
             txtAd.Name = "txtAd";
             txtAd.Size = new Size(100, 23);
             txtAd.TabIndex = 5;
